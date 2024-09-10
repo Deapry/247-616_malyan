@@ -64,6 +64,9 @@ int nombre;
   }
 
   fprintf(stdout,"Tapez:\n\r");
+  fprintf(stdout, "8\": pour connaître la position actuelle.\n\r");
+  fprintf(stdout, "P\": pour mettre la tête à la position 20, 20 ,20\n\r");
+  fprintf(stdout, "H\": pour mettre la tête à la position 20, 20 ,20\n\r");
   fprintf(stdout, "Q\": pour terminer.\n\r");
   fprintf(stdout, "6\": pour démarrer le ventilateur.\n\r");
   fprintf(stdout, "7\": pour arrêter le ventilateur.\n\r");  
@@ -77,6 +80,26 @@ int nombre;
     printf("Caractère lu = '%c'\n", toucheLue);
     switch (toucheLue)
     {
+      case 'S':
+      break;
+      case '8':
+        if(interfaceMalyan_donneLaPosition() < 0)
+        {
+          erreur = 1;
+        }
+      break;
+      case 'P':
+      if(interfaceMalyan_vaALaPosition() < 0)
+      {
+        erreur = 1;
+      }
+      break;
+      case 'H':
+      if(interfaceMalyan_retoruneALaMaison() < 0)
+      {
+        erreur = 1;
+      }
+      break;
       case '6':
         if (interfaceMalyan_demarreLeVentilateur() < 0)
         {

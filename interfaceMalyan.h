@@ -29,6 +29,9 @@ int interfaceMalyan_arreteLeVentilateur(void);
 int interfaceMalyan_genereUneErreur(void);
 int interfaceMalyan_recoitUneReponse(char *Reponse, unsigned char LongueurMaximale);
 
+int interfaceMalyan_donneLaPosition(void);
+int interfaceMalyan_vaALaPosition(void);
+
 int interfaceMalyan_demarreLaPompeDuUARM(void);
 int interfaceMalyan_arreteLaPompeDuUARM(void);
 
