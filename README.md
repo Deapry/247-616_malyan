@@ -17,4 +17,4 @@ ajouter les 3 fonctions dans le menu de la fonction main:
 
   H : positionne la tête d'impression à l'origine (home)
 
-2- 
+  Pour executer les commandes G-Code, il faut appuer sur 7 ou 6 et après la commande que l'on veut (P ou H ou 8)
